@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HITOMICHI 人道 ｜ 人と組織を、つなぐ道。 — HR専門家インタビューメディア</title>
+<meta name="description" content="CHRO・人事責任者・HRBPの実践と思想を綴る、HR専門家インタビューメディア。業種・規模・テーマで、人を活かす現場の事例を辿る。" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#0F1417',
+          'ink-soft': '#4A5159',
+          'ink-mute': '#8A8F95',
+          paper: '#FFFFFF',
+          'paper-soft': '#F6F4EF',
+          'paper-tint': '#FAF8F3',
+          accent: '#1B3A5C',
+          'accent-deep': '#122A45',
+          'accent-soft': '#E8EDF4',
+          line: '#E5E2DA',
+        },
+        fontFamily: {
+          serif: ['"Noto Serif JP"','serif'],
+          sans: ['"Noto Sans JP"','sans-serif'],
+        },
+        maxWidth: {
+          container: '1240px',
+        }
+      }
+    }
+  }
+</script>
+
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="bg-paper text-ink">
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" data-header-style="light">
+  <div class="max-w-container mx-auto px-6 lg:px-10 h-[78px] flex items-center justify-between">
+    <a href="index.html" class="header-logo flex items-baseline gap-3">
+      <span class="font-serif-jp text-[24px] font-medium tracking-[0.18em]">人道</span>
+      <span class="font-en-sans text-[10px] opacity-80">HITOMICHI</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-9">
+      <a href="#latest" class="nav-link">新着記事</a>
+      <a href="#special" class="nav-link">特別対談</a>
+      <a href="#interview" class="nav-link">インタビュー</a>
+      <a href="#column" class="nav-link">コラム</a>
+      <a href="#tags" class="nav-link">タグ一覧</a>
+    </nav>
+    <div class="flex items-center gap-5">
+      <button class="header-icon" aria-label="検索">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <a href="#" class="btn-pill hidden sm:inline-flex"><span class="btn-pill-label">Login</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="relative h-[100vh] min-h-[640px] w-full overflow-hidden">
+  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=2400&q=80"
+       alt="" class="absolute inset-0 w-full h-full object-cover" style="filter: grayscale(0.85) contrast(1.05) brightness(0.85);" />
+  <div class="absolute inset-0 hero-overlay"></div>
+
+  <div class="relative z-10 h-full max-w-container mx-auto px-6 lg:px-10 text-white flex flex-col justify-end pb-24 lg:pb-28">
+    <div class="max-w-2xl">
+      <div class="flex items-center gap-3 mb-6 text-[11px] tracking-[0.4em] uppercase opacity-90">
+        <span class="inline-block w-10 h-px bg-white/80"></span>
+        The Path of HR
+      </div>
+      <h1 class="font-display hero-title text-[44px] sm:text-[56px] lg:text-[68px] leading-[1.25] font-medium">
+        人と組織を、<br/>つなぐ道。
+      </h1>
+      <p class="font-serif-jp mt-8 text-[15px] sm:text-[16px] leading-[2] opacity-90 max-w-xl">
+        平坦な道はない。<br/>
+        CHRO、人事責任者、HRBP。<br/>
+        現場の手触りから制度設計まで、人を活かす実践と思想を辿るインタビューメディア。
+      </p>
+      <div class="mt-12 flex items-center gap-6">
+        <a href="#interview" class="inline-flex items-center gap-4 text-[12px] tracking-[0.3em] uppercase">
+          <span>Read Interviews</span>
+          <span class="inline-block w-12 h-px bg-white"></span>
+        </a>
+        <a href="#latest" class="inline-flex items-center gap-3 text-[12px] tracking-[0.3em] uppercase opacity-80 hover:opacity-100">
+          Latest →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 right-8 z-10 text-white text-[10px] tracking-[0.3em] uppercase opacity-80 hidden md:flex flex-col items-center gap-3">
+    <span>Scroll</span>
+    <span class="block w-px h-12 bg-white/60"></span>
+  </div>
+</section>
+
+<!-- ============ FACET SEARCH ============ -->
+<section class="bg-paper-tint border-y border-line">
+  <div class="max-w-container mx-auto px-6 lg:px-10 py-20 lg:py-24">
+    <div class="flex items-end justify-between flex-wrap gap-6 mb-10">
+      <div>
+        <div class="section-eyebrow mb-4">Search</div>
+        <h2 class="section-title text-[28px] lg:text-[34px]">事例を、いま必要な軸で。</h2>
+      </div>
+      <p class="font-serif-jp text-ink-soft text-[14px] leading-[2] max-w-md">業種 × 企業規模 × テーマの3軸で、いまの組織課題に近いインタビューを探せます。</p>
+    </div>
+
+    <div data-facet>
+      <div class="border-b border-line flex gap-5 sm:gap-10 mb-10 overflow-x-auto">
+        <button class="facet-tab whitespace-nowrap" data-target="industry" data-active="true">業種で探す<span class="font-en-sans text-[10px] ml-2 opacity-60 hidden sm:inline">Industry</span></button>
+        <button class="facet-tab whitespace-nowrap" data-target="scale" data-active="false">規模で探す<span class="font-en-sans text-[10px] ml-2 opacity-60 hidden sm:inline">Scale</span></button>
+        <button class="facet-tab whitespace-nowrap" data-target="theme" data-active="false">テーマで探す<span class="font-en-sans text-[10px] ml-2 opacity-60 hidden sm:inline">Theme</span></button>
+      </div>
+
+      <!-- Panel: Industry -->
+      <div class="facet-panel grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3" data-panel="industry" data-active="true">
+        <a href="#" class="facet-chip">製造業 <span class="count">38</span></a>
+        <a href="#" class="facet-chip">IT・通信 <span class="count">62</span></a>
+        <a href="#" class="facet-chip">金融・保険 <span class="count">24</span></a>
+        <a href="#" class="facet-chip">商社・卸 <span class="count">14</span></a>
+        <a href="#" class="facet-chip">小売・流通 <span class="count">29</span></a>
+        <a href="#" class="facet-chip">建設・不動産 <span class="count">17</span></a>
+        <a href="#" class="facet-chip">運輸・物流 <span class="count">11</span></a>
+        <a href="#" class="facet-chip">医療・介護 <span class="count">22</span></a>
+        <a href="#" class="facet-chip">教育 <span class="count">8</span></a>
+        <a href="#" class="facet-chip">サービス業 <span class="count">31</span></a>
+        <a href="#" class="facet-chip">コンサル・士業 <span class="count">19</span></a>
+        <a href="#" class="facet-chip">エネルギー <span class="count">6</span></a>
+        <a href="#" class="facet-chip">食品・飲料 <span class="count">13</span></a>
+        <a href="#" class="facet-chip">広告・出版 <span class="count">15</span></a>
+        <a href="#" class="facet-chip">人材・教育サービス <span class="count">21</span></a>
+        <a href="#" class="facet-chip">化学・素材 <span class="count">9</span></a>
+        <a href="#" class="facet-chip">製薬・化粧品 <span class="count">12</span></a>
+        <a href="#" class="facet-chip">官公庁・自治体 <span class="count">5</span></a>
+        <a href="#" class="facet-chip">NPO・学術 <span class="count">4</span></a>
+        <a href="#" class="facet-chip">その他 <span class="count">10</span></a>
+      </div>
+
+      <!-- Panel: Scale -->
+      <div class="facet-panel grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3" data-panel="scale" data-active="false">
+        <a href="#" class="facet-chip">〜49名 <span class="count">36</span></a>
+        <a href="#" class="facet-chip">50〜199名 <span class="count">58</span></a>
+        <a href="#" class="facet-chip">200〜999名 <span class="count">81</span></a>
+        <a href="#" class="facet-chip">1,000〜4,999名 <span class="count">47</span></a>
+        <a href="#" class="facet-chip">5,000名以上 <span class="count">28</span></a>
+      </div>
+
+      <!-- Panel: Theme -->
+      <div class="facet-panel grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3" data-panel="theme" data-active="false">
+        <a href="#" class="facet-chip">リスキリング <span class="count">24</span></a>
+        <a href="#" class="facet-chip">エンゲージメント <span class="count">31</span></a>
+        <a href="#" class="facet-chip">DEI <span class="count">18</span></a>
+        <a href="#" class="facet-chip">組織開発 <span class="count">42</span></a>
+        <a href="#" class="facet-chip">評価制度 <span class="count">29</span></a>
+        <a href="#" class="facet-chip">採用 <span class="count">36</span></a>
+        <a href="#" class="facet-chip">ウェルビーイング <span class="count">15</span></a>
+        <a href="#" class="facet-chip">HRtech <span class="count">22</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PICKUP ============ -->
+<section id="latest" class="py-20 lg:py-28">
+  <div class="max-w-container mx-auto px-6 lg:px-10">
+    <div class="mb-14">
+      <div class="section-eyebrow mb-4">Pick up</div>
+      <h2 class="section-title text-[30px] lg:text-[38px]">いま、読みたい二篇。</h2>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-10 lg:gap-16">
+      <!-- Pickup 01 -->
+      <a href="interview-01.html" class="card group block">
+        <div class="thumb aspect-[4/3] mb-7">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1400&q=80" style="filter: grayscale(0.2) contrast(1.05);" alt="" />
+        </div>
+        <div class="flex items-start gap-6">
+          <div class="pickup-num shrink-0">01</div>
+          <div class="flex-1">
+            <div class="flex items-center gap-2 flex-wrap mb-3">
+              <span class="meta-tag theme">組織開発</span>
+              <span class="meta-tag theme">評価制度</span>
+              <span class="meta-tag">製造業</span>
+              <span class="meta-tag">5,000名以上</span>
+            </div>
+            <h3 class="card-title text-[24px] lg:text-[28px] mb-5">経営と現場を往復する、<br/>人事の翻訳力。</h3>
+            <p class="text-ink-soft text-[14px] leading-[2]">数字で語る経営層と、感情で動く現場。両者の言葉を編み直してきたCHROが、就任から五年で得た「人事の翻訳力」を語る。</p>
+            <div class="flex items-center gap-4 mt-6 text-[12px] text-ink-mute tracking-[0.1em]">
+              <span>田中 良子</span><span>株式会社オリエンス・ホールディングス</span><span>執行役員CHRO</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Pickup 02 -->
+      <a href="#" class="card group block">
+        <div class="thumb aspect-[4/3] mb-7">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=1400&q=80" style="filter: grayscale(0.2) contrast(1.05);" alt="" />
+        </div>
+        <div class="flex items-start gap-6">
+          <div class="pickup-num shrink-0">02</div>
+          <div class="flex-1">
+            <div class="flex items-center gap-2 flex-wrap mb-3">
+              <span class="meta-tag theme">エンゲージメント</span>
+              <span class="meta-tag theme">評価制度</span>
+              <span class="meta-tag">製造業</span>
+              <span class="meta-tag">1,000〜4,999名</span>
+            </div>
+            <h3 class="card-title text-[24px] lg:text-[28px] mb-5">20代の離職を半減させた、<br/>対話型評価への転換。</h3>
+            <p class="text-ink-soft text-[14px] leading-[2]">「査定」から「対話」へ。年に一度の評価面談を、月一の1on1へと再設計した人事戦略部長が、現場の手応えと運用上の壁を率直に語る。</p>
+            <div class="flex items-center gap-4 mt-6 text-[12px] text-ink-mute tracking-[0.1em]">
+              <span>山田 健一</span><span>千住メタルワークス株式会社</span><span>人事戦略部長</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPECIAL ============ -->
+<section id="special" class="py-20 lg:py-28 bg-paper-soft">
+  <div class="max-w-container mx-auto px-6 lg:px-10">
+    <div class="flex items-end justify-between flex-wrap gap-4 mb-14">
+      <div>
+        <div class="section-eyebrow mb-4">Special</div>
+        <h2 class="section-title text-[30px] lg:text-[38px]">特別対談 ｜ 時代を撃つHR。</h2>
+      </div>
+      <a href="#" class="text-[12px] tracking-[0.2em] uppercase text-accent hover:opacity-70">View All →</a>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-10 lg:gap-12">
+      <!-- Special 01 -->
+      <a href="#" class="card group block bg-white">
+        <div class="thumb aspect-[16/10] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80" style="filter: grayscale(0.3) contrast(1.05);" alt="" />
+        </div>
+        <div class="p-8 lg:p-10">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="font-en text-accent text-[14px]">— Dialogue 01</span>
+          </div>
+          <div class="flex items-center gap-2 flex-wrap mb-4">
+            <span class="meta-tag theme">リスキリング</span>
+            <span class="meta-tag">IT・通信</span>
+          </div>
+          <h3 class="card-title text-[22px] lg:text-[26px] mb-4">リスキリングは"権利"だ。</h3>
+          <p class="text-ink-soft text-[14px] leading-[2] mb-6">企業が学び直しを「与える」のか、社員が「掴む」のか。経営とCHROがその境界線を語り尽くす120分。</p>
+          <div class="divider-rule mb-6"></div>
+          <div class="flex items-center gap-6 text-[13px]">
+            <span class="font-serif-jp">木村 拓海 <span class="text-ink-mute text-[11px]">CHRO</span></span>
+            <span class="text-ink-mute">×</span>
+            <span class="font-serif-jp">藤本 涼 <span class="text-ink-mute text-[11px]">CEO</span></span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Special 02 -->
+      <a href="#" class="card group block bg-white">
+        <div class="thumb aspect-[16/10] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1600&q=80" style="filter: grayscale(0.3) contrast(1.05);" alt="" />
+        </div>
+        <div class="p-8 lg:p-10">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="font-en text-accent text-[14px]">— Dialogue 02</span>
+          </div>
+          <div class="flex items-center gap-2 flex-wrap mb-4">
+            <span class="meta-tag theme">カルチャー</span>
+            <span class="meta-tag">スタートアップ</span>
+          </div>
+          <h3 class="card-title text-[22px] lg:text-[26px] mb-4">カルチャーは、設計できるか。</h3>
+          <p class="text-ink-soft text-[14px] leading-[2] mb-6">100人を越えた瞬間、空気は薄まる。スタートアップのCHROと創業者が「再現性のあるカルチャー」の輪郭を探る。</p>
+          <div class="divider-rule mb-6"></div>
+          <div class="flex items-center gap-6 text-[13px]">
+            <span class="font-serif-jp">佐藤 美和 <span class="text-ink-mute text-[11px]">CHRO</span></span>
+            <span class="text-ink-mute">×</span>
+            <span class="font-serif-jp">三浦 直人 <span class="text-ink-mute text-[11px]">CEO</span></span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTERVIEW ============ -->
+<section id="interview" class="py-20 lg:py-28">
+  <div class="max-w-container mx-auto px-6 lg:px-10">
+    <div class="flex items-end justify-between flex-wrap gap-4 mb-14">
+      <div>
+        <div class="section-eyebrow mb-4">Interview</div>
+        <h2 class="section-title text-[30px] lg:text-[38px]">人を、語りだす。</h2>
+      </div>
+      <a href="#" class="text-[12px] tracking-[0.2em] uppercase text-accent hover:opacity-70">View All →</a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14 lg:gap-y-16">
+
+      <a href="interview-01.html" class="card block">
+        <div class="thumb aspect-[5/4] mb-6">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=80" style="filter: grayscale(0.3) contrast(1.05);" alt="" />
+        </div>
+        <div class="flex items-center gap-2 flex-wrap mb-3">
+          <span class="meta-tag theme">組織開発</span>
+          <span class="meta-tag">製造業</span>
+        </div>
+        <h3 class="card-title text-[19px] mb-3 leading-[1.55]">経営と現場を往復する、人事の翻訳力。</h3>
+        <p class="text-ink-mute text-[12px] tracking-[0.08em]">田中 良子 ｜ オリエンス・ホールディングス 執行役員CHRO</p>
+      </a>
+
+      <a href="#" class="card block">
+        <div class="thumb aspect-[5/4] mb-6">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=1200&q=80" style="filter: grayscale(0.3) contrast(1.05);" alt="" />
+        </div>
+        <div class="flex items-center gap-2 flex-wrap mb-3">
+          <span class="meta-tag theme">カルチャー</span>
+          <span class="meta-tag">IT・通信</span>
+        </div>
+        <h3 class="card-title text-[19px] mb-3 leading-[1.55]">100名突破時に直面した、カルチャー再定義。</h3>
+        <p class="text-ink-mute text-[12px] tracking-[0.08em]">佐藤 美和 ｜ Studio Hatcher 人事責任者</p>
+      </a>
+
+      <a href="#" class="card block">
+        <div class="thumb aspect-[5/4] mb-6">
+          <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1200&q=80" style="filter: grayscale(0.3) contrast(1.05);" alt="" />
+        </div>
+        <div class="flex items-center gap-2 flex-wrap mb-3">
+          <span class="meta-tag theme">DEI</span>
+          <span class="meta-tag">小売・流通</span>
+        </div>
+        <h3 class="card-title text-[19px] mb-3 leading-[1.55]">DEIを"きれいごと"で終わらせない。</h3>
+        <p class="text-ink-mute text-[12px] tracking-[0.08em]">鈴木 葵 ｜ MARKLINE D&I推進部長</p>
+      </a>
+
+      <a href="#" class="card block">
+        <div class="thumb aspect-[5/4] mb-6">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=1200&q=80" style="filter: grayscale(0.3) contrast(1.05);" alt="" />
+        </div>
+        <div class="flex items-center gap-2 flex-wrap mb-3">
+          <span class="meta-tag theme">HRBP</span>
+          <span class="meta-tag">コンサル・士業</span>
+        </div>
+        <h3 class="card-title text-[19px] mb-3 leading-[1.55]">HRBPは"翻訳者"であり、"設計者"でもある。</h3>
+        <p class="text-ink-mute text-[12px] tracking-[0.08em]">高橋 翔 ｜ Verbena Consulting HRBP</p>
+      </a>
+
+      <a href="#" class="card block">
+        <div class="thumb aspect-[5/4] mb-6">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=1200&q=80" style="filter: grayscale(0.3) contrast(1.05);" alt="" />
+        </div>
+        <div class="flex items-center gap-2 flex-wrap mb-3">
+          <span class="meta-tag theme">採用</span>
+          <span class="meta-tag">金融・保険</span>
+        </div>
+        <h3 class="card-title text-[19px] mb-3 leading-[1.55]">新卒一括採用の、終わり方。</h3>
+        <p class="text-ink-mute text-[12px] tracking-[0.08em]">中村 律子 ｜ 北辰トラスト銀行 採用責任者</p>
+      </a>
+
+      <a href="#" class="card block">
+        <div class="thumb aspect-[5/4] mb-6">
+          <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=crop&w=1200&q=80" style="filter: grayscale(0.3) contrast(1.05);" alt="" />
+        </div>
+        <div class="flex items-center gap-2 flex-wrap mb-3">
+          <span class="meta-tag theme">ウェルビーイング</span>
+          <span class="meta-tag">製薬・化粧品</span>
+        </div>
+        <h3 class="card-title text-[19px] mb-3 leading-[1.55]">ウェルビーイングは、制度ではなく文化だ。</h3>
+        <p class="text-ink-mute text-[12px] tracking-[0.08em]">林 拓也 ｜ サンライト製薬 人事部長</p>
+      </a>
+
+    </div>
+
+    <div class="text-center mt-16">
+      <a href="#" class="inline-flex items-center gap-4 text-[12px] tracking-[0.3em] uppercase text-ink hover:text-accent">
+        <span class="inline-block w-10 h-px bg-current"></span>
+        More Interviews
+        <span class="inline-block w-10 h-px bg-current"></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COLUMN ============ -->
+<section id="column" class="py-20 lg:py-28 bg-paper-soft">
+  <div class="max-w-container mx-auto px-6 lg:px-10">
+    <div class="flex items-end justify-between flex-wrap gap-4 mb-14">
+      <div>
+        <div class="section-eyebrow mb-4">Column</div>
+        <h2 class="section-title text-[30px] lg:text-[38px]">60分で読む、HR論。</h2>
+      </div>
+      <a href="#" class="text-[12px] tracking-[0.2em] uppercase text-accent hover:opacity-70">View All →</a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
+
+      <a href="#" class="card block bg-white">
+        <div class="thumb aspect-[3/2] mb-5">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80" style="filter: grayscale(0.35);" alt="" />
+        </div>
+        <div class="px-1">
+          <div class="text-[11px] tracking-[0.2em] text-accent mb-3">COLUMN ｜ 雇用制度</div>
+          <h3 class="card-title text-[16px] leading-[1.6] mb-3">ジョブ型を3年運用してわかったこと。</h3>
+          <p class="text-ink-mute text-[12px]">2026.04.18 ｜ 編集部</p>
+        </div>
+      </a>
+
+      <a href="#" class="card block bg-white">
+        <div class="thumb aspect-[3/2] mb-5">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80" style="filter: grayscale(0.35);" alt="" />
+        </div>
+        <div class="px-1">
+          <div class="text-[11px] tracking-[0.2em] text-accent mb-3">COLUMN ｜ サーベイ</div>
+          <h3 class="card-title text-[16px] leading-[1.6] mb-3">エンゲージメントサーベイの、落とし穴。</h3>
+          <p class="text-ink-mute text-[12px]">2026.04.10 ｜ 編集部</p>
+        </div>
+      </a>
+
+      <a href="#" class="card block bg-white">
+        <div class="thumb aspect-[3/2] mb-5">
+          <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&w=900&q=80" style="filter: grayscale(0.35);" alt="" />
+        </div>
+        <div class="px-1">
+          <div class="text-[11px] tracking-[0.2em] text-accent mb-3">COLUMN ｜ 後継者育成</div>
+          <h3 class="card-title text-[16px] leading-[1.6] mb-3">次世代リーダー育成の、リアル。</h3>
+          <p class="text-ink-mute text-[12px]">2026.03.28 ｜ 編集部</p>
+        </div>
+      </a>
+
+      <a href="#" class="card block bg-white">
+        <div class="thumb aspect-[3/2] mb-5">
+          <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=900&q=80" style="filter: grayscale(0.35);" alt="" />
+        </div>
+        <div class="px-1">
+          <div class="text-[11px] tracking-[0.2em] text-accent mb-3">COLUMN ｜ 人的資本</div>
+          <h3 class="card-title text-[16px] leading-[1.6] mb-3">人的資本開示、現場のホンネ。</h3>
+          <p class="text-ink-mute text-[12px]">2026.03.15 ｜ 編集部</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ TAGS ============ -->
+<section id="tags" class="py-20 lg:py-24">
+  <div class="max-w-container mx-auto px-6 lg:px-10">
+    <div class="text-center mb-12">
+      <div class="section-eyebrow mb-4 justify-center" style="display:inline-flex;">Tags</div>
+      <h2 class="section-title text-[28px] lg:text-[34px]">関心から、辿る。</h2>
+    </div>
+    <div class="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
+      <a href="#" class="tag-pill"><span class="hash">#</span>リスキリング</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>エンゲージメント</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>1on1</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>ジョブ型</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>DEI</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>ダイバーシティ</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>カルチャー</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>新卒採用</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>中途採用</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>採用ブランディング</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>評価制度</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>報酬設計</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>組織開発</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>HRBP</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>CHRO</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>HRtech</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>ピープルアナリティクス</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>離職防止</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>女性活躍</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>ウェルビーイング</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>人的資本開示</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>ハイブリッドワーク</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>サクセッション</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>制度設計</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>越境学習</a>
+      <a href="#" class="tag-pill"><span class="hash">#</span>360度評価</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RELATED SERVICES ============ -->
+<section class="py-20 lg:py-24 bg-paper-tint border-t border-line">
+  <div class="max-w-container mx-auto px-6 lg:px-10">
+    <div class="text-center mb-12">
+      <div class="section-eyebrow mb-4 justify-center" style="display:inline-flex;">Network</div>
+      <h2 class="section-title text-[28px] lg:text-[34px]">HITOMICHIの、もうひとつの場所。</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5">
+      <a href="#" class="block relative aspect-[16/10] overflow-hidden group">
+        <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1200&q=80" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style="filter: grayscale(0.5) brightness(0.55);" alt="" />
+        <div class="absolute inset-0 flex flex-col justify-end p-8 text-white">
+          <div class="font-en text-[14px] mb-2 opacity-90">— Conference</div>
+          <h3 class="font-serif-jp text-[22px] mb-2 leading-[1.4]">HITOMICHI Conference</h3>
+          <p class="text-[12px] opacity-80 leading-[1.8]">年に二度、CHROが集う招待制カンファレンス。</p>
+        </div>
+      </a>
+      <a href="#" class="block relative aspect-[16/10] overflow-hidden group">
+        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1200&q=80" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style="filter: grayscale(0.5) brightness(0.55);" alt="" />
+        <div class="absolute inset-0 flex flex-col justify-end p-8 text-white">
+          <div class="font-en text-[14px] mb-2 opacity-90">— Awards</div>
+          <h3 class="font-serif-jp text-[22px] mb-2 leading-[1.4]">HITOMICHI Awards</h3>
+          <p class="text-[12px] opacity-80 leading-[1.8]">"人を活かす"取り組みを表彰する、年次アワード。</p>
+        </div>
+      </a>
+      <a href="#" class="block relative aspect-[16/10] overflow-hidden group">
+        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style="filter: grayscale(0.5) brightness(0.55);" alt="" />
+        <div class="absolute inset-0 flex flex-col justify-end p-8 text-white">
+          <div class="font-en text-[14px] mb-2 opacity-90">— Salon</div>
+          <h3 class="font-serif-jp text-[22px] mb-2 leading-[1.4]">HR Practitioners' Salon</h3>
+          <p class="text-[12px] opacity-80 leading-[1.8]">月例で開く、人事責任者のためのオフレコの会。</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="py-20 lg:py-24 bg-accent text-white">
+  <div class="max-w-container mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-10 items-center">
+    <div>
+      <div class="font-en-sans text-[11px] tracking-[0.3em] opacity-80 mb-4">— Letter from HITOMICHI</div>
+      <h2 class="font-serif-jp text-[28px] lg:text-[34px] leading-[1.4]">毎週金曜、<br/>HRの一篇を、お手元へ。</h2>
+      <p class="text-[14px] leading-[2] mt-6 opacity-85 max-w-md">編集部が選ぶ今週のインタビューと、現場で実践できる小さな洞察を、メールで。約8,400名のHR実践者が購読中。</p>
+    </div>
+    <form class="flex items-stretch gap-3 bg-white p-2">
+      <input type="email" placeholder="your-email@example.com" class="flex-1 px-4 py-3 text-ink text-[14px] focus:outline-none placeholder:text-ink-mute" />
+      <button type="submit" class="bg-accent-deep text-white px-7 text-[12px] tracking-[0.2em] uppercase hover:bg-ink transition-colors">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer pt-16 pb-10">
+  <div class="max-w-container mx-auto px-6 lg:px-10">
+    <div class="grid md:grid-cols-4 gap-10 mb-14">
+      <div class="md:col-span-1">
+        <div class="flex items-baseline gap-3 mb-5">
+          <span class="font-serif-jp text-white text-[24px] tracking-[0.18em]">人道</span>
+          <span class="font-en-sans text-[10px] text-white/70">HITOMICHI</span>
+        </div>
+        <p class="text-[12px] leading-[2] text-white/70">人を、企業の資本に。<br/>HR実践者のためのインタビューメディア。</p>
+      </div>
+      <div>
+        <div class="font-en-sans text-[10px] text-white/60 mb-4">Read</div>
+        <ul class="space-y-3 text-[13px]">
+          <li><a href="#latest">新着記事</a></li>
+          <li><a href="#special">特別対談</a></li>
+          <li><a href="#interview">インタビュー</a></li>
+          <li><a href="#column">コラム</a></li>
+          <li><a href="#tags">タグ一覧</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-en-sans text-[10px] text-white/60 mb-4">Service</div>
+        <ul class="space-y-3 text-[13px]">
+          <li><a href="#">HITOMICHI Conference</a></li>
+          <li><a href="#">HITOMICHI Awards</a></li>
+          <li><a href="#">HR Practitioners' Salon</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-en-sans text-[10px] text-white/60 mb-4">About</div>
+        <ul class="space-y-3 text-[13px]">
+          <li><a href="#">運営会社</a></li>
+          <li><a href="#">編集方針</a></li>
+          <li><a href="#">広告掲載</a></li>
+          <li><a href="#">取材依頼</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 flex flex-wrap justify-between items-center gap-4 text-[11px] text-white/50">
+      <div>© 2026 HITOMICHI Editorial. All rights reserved.</div>
+      <div class="flex gap-5">
+        <a href="#">X</a>
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">note</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
