@@ -2,3 +2,6 @@ node_modules/
 .DS_Store
 .vercel
 *.log
+
+# Local A/B preview files (not for production)
+_preview-*.html
