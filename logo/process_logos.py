@@ -111,11 +111,24 @@ img3 = Image.open(VERTICAL)
 img3_black = auto_crop(transparent_ink(img3, color=(0, 0, 0)))
 img3_square = pad_to_square(img3_black, pad_ratio=0.08)
 
-# シンボルマーク（大、SNS等用）
+# シンボルマーク（大、SNS等用）— HITOMICHIテキストを含む完全版
 save_resized(img3_square, os.path.join(ASSETS_DIR, "logo-mark.png"), target_size=512)
 print(f"  ✓ logo-mark.png              512x512")
 
-# Favicon各サイズ
+# ------------------------------------------------------------
+# Favicon専用ソース: HITOMICHIテキストを除外し「人道」のみ密集
+# 16-32pxではHITOMICHIテキストは見えないので削って密度を最大化
+# ------------------------------------------------------------
+img3_full = Image.open(VERTICAL)
+w_full, h_full = img3_full.size
+# 右側のHITOMICHI縦書きテキストを除外（左60%でカット）
+img3_kanji_raw = img3_full.crop((0, 0, int(w_full * 0.60), h_full))
+# auto_crop の閾値を高めにして、薄いアーティファクトの余白も削る
+img3_kanji_t = transparent_ink(img3_kanji_raw, color=(0, 0, 0))
+img3_kanji = auto_crop(img3_kanji_t, threshold=40)
+favicon_src = pad_to_square(img3_kanji, pad_ratio=0.03)  # ごく小さな余白
+
+# Favicon各サイズ（人道のみ、密度高め）
 for size, filename in [
     (512, "favicon-512.png"),
     (192, "favicon-192.png"),
@@ -123,7 +136,7 @@ for size, filename in [
     (32,  "favicon-32.png"),
     (16,  "favicon-16.png"),
 ]:
-    save_resized(img3_square, os.path.join(ASSETS_DIR, filename), target_size=size)
+    save_resized(favicon_src, os.path.join(ASSETS_DIR, filename), target_size=size)
     print(f"  ✓ {filename:24s} {size}x{size}")
 
 
