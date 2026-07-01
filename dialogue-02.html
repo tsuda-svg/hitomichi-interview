@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>カルチャーは、設計できるか。 ｜ 特別対談 ｜ 人道</title>
+<meta name="description" content="ノースフィールドCEO 三浦直人氏とCHRO 佐藤美和氏が、スタートアップにおけるカルチャー設計の本質を語る。" />
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="人道" />
+<meta property="og:title" content="カルチャーは、設計できるか。 ｜ 特別対談" />
+<meta property="og:description" content="ノースフィールドCEO 三浦直人氏とCHRO 佐藤美和氏が、スタートアップにおけるカルチャー設計の本質を語る。" />
+<meta property="og:url" content="https://hitomichi-interview.vercel.app/dialogue-02.html" />
+<meta property="og:image" content="https://hitomichi-interview.vercel.app/assets/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="人道 HITOMICHI 特別対談 — カルチャーは、設計できるか。" />
+<meta property="og:locale" content="ja_JP" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="カルチャーは、設計できるか。 ｜ 特別対談" />
+<meta name="twitter:description" content="ノースフィールドCEO 三浦直人氏とCHRO 佐藤美和氏が、スタートアップにおけるカルチャー設計の本質を語る。" />
+<meta name="twitter:image" content="https://hitomichi-interview.vercel.app/assets/og-image.jpg" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: { ink: '#0F1417', 'ink-soft': '#4A5159', 'ink-mute': '#8A8F95', paper: '#FFFFFF', 'paper-soft': '#F6F4EF', 'paper-tint': '#FAF8F3', accent: '#1B3A5C', 'accent-deep': '#122A45', 'accent-soft': '#E8EDF4', line: '#E5E2DA' },
+      fontFamily: { serif: ['"Noto Serif JP"','serif'], sans: ['"Noto Sans JP"','sans-serif'] },
+      maxWidth: { container: '1240px', article: '760px' }
+    }}
+  }
+</script>
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="bg-paper text-ink">
+
+<header class="site-header" data-header-style="light">
+  <div class="max-w-container mx-auto px-6 lg:px-10 h-[78px] flex items-center justify-between">
+    <a href="index.html" class="header-logo flex items-center">
+      <img class="logo-dark h-10 lg:h-12 w-auto" src="assets/logo-horizontal.png" srcset="assets/logo-horizontal.png 1x, assets/logo-horizontal@2x.png 2x" alt="HITOMICHI 人道" />
+      <img class="logo-light h-10 lg:h-12 w-auto" src="assets/logo-horizontal-white.png" srcset="assets/logo-horizontal-white.png 1x, assets/logo-horizontal-white@2x.png 2x" alt="HITOMICHI 人道" />
+    </a>
+    <nav class="hidden md:flex items-center gap-9">
+      <a href="index.html#latest" class="nav-link">新着記事</a>
+      <a href="index.html#special" class="nav-link">特別対談</a>
+      <a href="index.html#interview" class="nav-link">インタビュー</a>
+      <a href="columns.html" class="nav-link">コラム</a>
+      <a href="index.html#tags" class="nav-link">タグ一覧</a>
+    </nav>
+    <div class="flex items-center gap-5">
+      <button class="header-icon" aria-label="検索">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ DIALOGUE HERO ============ -->
+<section class="relative h-[88vh] min-h-[600px] w-full overflow-hidden">
+  <img src="assets/photos/dialogue-02.jpg"
+       alt="佐藤 美和 × 三浦 直人" class="absolute inset-0 w-full h-full object-cover" style="filter: grayscale(0.3) contrast(1.05) brightness(0.75);" />
+  <div class="absolute inset-0 hero-overlay"></div>
+
+  <div class="relative z-10 h-full max-w-container mx-auto px-6 lg:px-10 text-white flex flex-col justify-end pb-20 lg:pb-24">
+    <div class="max-w-3xl">
+      <div class="flex items-center gap-3 mb-5 text-[11px] tracking-[0.4em] uppercase opacity-90">
+        <span class="inline-block w-10 h-px bg-white/80"></span>
+        Special Dialogue — Dialogue No. 002
+      </div>
+      <div class="flex items-center gap-2 flex-wrap mb-6">
+        
+        <span class="meta-tag theme" style="background: rgba(232,237,244,0.15); border-color: rgba(232,237,244,0.2); color:#fff;">カルチャー</span>
+        
+        <span class="meta-tag theme" style="background: rgba(232,237,244,0.15); border-color: rgba(232,237,244,0.2); color:#fff;">組織開発</span>
+        
+        <span class="meta-tag" style="background: transparent; border-color: rgba(255,255,255,0.3); color:#fff;">スタートアップ</span>
+      </div>
+      <h1 class="font-display text-[36px] sm:text-[48px] lg:text-[60px] leading-[1.3] font-medium mb-6">
+        カルチャーは、<br/>設計できるか。
+      </h1>
+      <p class="font-serif-jp text-[15px] sm:text-[16px] leading-[2] opacity-90 max-w-2xl">
+        100人を越えた瞬間、空気は薄まる。スタートアップのCHROと創業CEOが、「再現性のあるカルチャー」の輪郭を探る。
+      </p>
+      <div class="mt-10 flex items-center flex-wrap gap-x-5 gap-y-2 text-[12px] tracking-[0.15em] opacity-85">
+        <span>2026.05.10</span>
+        <span class="inline-block w-6 h-px bg-white/40 hidden sm:inline-block"></span>
+        <span>READ 14 MIN</span>
+        <span class="inline-block w-6 h-px bg-white/40 hidden sm:inline-block"></span>
+        <span>Interviewer ｜ 編集部 高橋</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BREADCRUMB ============ -->
+<div class="border-b border-line">
+  <div class="max-w-container mx-auto px-6 lg:px-10 py-4 text-[11px] tracking-[0.1em] text-ink-mute">
+    <a href="index.html" class="hover:text-accent">HOME</a> ／
+    <a href="index.html#special" class="hover:text-accent">Special Dialogue</a> ／
+    <span class="text-ink">カルチャーは、設計できるか。</span>
+  </div>
+</div>
+
+<!-- ============ TWO SPEAKERS PROFILE ============ -->
+<section class="py-16 lg:py-20 bg-paper-tint border-b border-line">
+  <div class="max-w-3xl mx-auto px-6 lg:px-10">
+    <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+
+      <!-- Speaker A -->
+      <div class="text-center md:text-left">
+        <img src="assets/photos/interview-02.jpg" alt="佐藤 美和"
+             class="w-24 h-24 rounded-full object-cover mx-auto md:mx-0 mb-4" style="filter: grayscale(0.2) contrast(1.05);" />
+        <div class="font-en-sans text-[10px] tracking-[0.3em] text-accent mb-2">SPEAKER A</div>
+        <h2 class="font-serif-jp text-[22px] mb-1">佐藤 美和<span class="text-ink-mute text-[12px] ml-3 tracking-[0.1em]">Sato Miwa</span></h2>
+        <p class="text-[13px] text-ink-soft leading-[1.9] mb-3">執行役員CHRO ／ 株式会社ノースフィールド</p>
+        <p class="text-[13px] text-ink-soft leading-[1.95]">1985年生まれ。大手戦略コンサルティングファームを経て、複数のスタートアップで組織開発を経験。2022年よりノースフィールドCHRO。急成長期のカルチャー再定義の実装者として、業界内で発信を続ける。</p>
+      </div>
+
+      <!-- Speaker B -->
+      <div class="text-center md:text-left">
+        <img src="assets/photos/interview-05.jpg" alt="三浦 直人"
+             class="w-24 h-24 rounded-full object-cover mx-auto md:mx-0 mb-4" style="filter: grayscale(0.2) contrast(1.05);" />
+        <div class="font-en-sans text-[10px] tracking-[0.3em] text-accent mb-2">SPEAKER B</div>
+        <h2 class="font-serif-jp text-[22px] mb-1">三浦 直人<span class="text-ink-mute text-[12px] ml-3 tracking-[0.1em]">Miura Naoto</span></h2>
+        <p class="text-[13px] text-ink-soft leading-[1.9] mb-3">代表取締役CEO ／ 株式会社ノースフィールド</p>
+        <p class="text-[13px] text-ink-soft leading-[1.95]">1979年生まれ。大手通信会社の新規事業を経て、2016年にノースフィールドを創業。B2B SaaSプロダクトで急成長中。「カルチャーは経営の最重要資産」を掲げ、CHROに強い権限を委譲する経営スタイルで知られる。</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIALOGUE BODY ============ -->
+<article class="py-16 lg:py-24">
+  <div class="max-w-article mx-auto px-6">
+    <div class="article-body">
+      <p class="lead">スタートアップの成長期、社員数が100人を越えた瞬間、多くの組織で見えない亀裂が入る。SaaS開発のノースフィールド、創業CEOと2代目CHROが、この閾値をどう乗り越えたかを語る。「カルチャーは設計できるか」という問いへの、両者の答え。</p>
+
+      
+      <h2>100人を境に、カルチャーが薄まる音がした</h2>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">三浦 直人（CEO）</div>
+        <p class="text-ink-soft leading-[2]">創業から99名までは、僕の朝会1回で全員に空気が伝わっていました。100名を越えた瞬間、後方の席の人に空気が届かなくなった。物理的にも、心理的にも。</p>
+      </div>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">佐藤 美和（CHRO）</div>
+        <p class="text-ink-soft leading-[2]">私がCHROとして就任したのは、ちょうどこの頃です。新入社員から「何を判断していいか分からない」という声を複数聞きました。それまで、判断は言葉で伝えるものではなく、周りを見て学ぶものだった。100人を越えると、周りが見えない。</p>
+      </div>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">三浦 直人（CEO）</div>
+        <p class="text-ink-soft leading-[2]">経営としては、この事態に気づくのが遅れました。売上は伸びていたし、離職率も低い。数字は健康に見えた。でも佐藤さんが就任してから、水面下で何が起きているかを教えてもらいました。</p>
+      </div>
+      
+      
+      <h2>カルチャーは「価値観」か、「動詞」か</h2>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">佐藤 美和（CHRO）</div>
+        <p class="text-ink-soft leading-[2]">私が最初に取り組んだのは、カルチャーの「動詞化」でした。「自由な」「協力的な」「挑戦的な」といった形容詞ベースのカルチャー・ステートメントを、動詞に置き換えた。「自分で決める」「他者の判断を尊重する」「未検証の仮説を持ち込む」。</p>
+      </div>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">三浦 直人（CEO）</div>
+        <p class="text-ink-soft leading-[2]">最初、僕はこの提案に半分懐疑的でした。「自由」と「自分で決める」の違いが何なのか、直感的に分からなかった。</p>
+      </div>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">佐藤 美和（CHRO）</div>
+        <p class="text-ink-soft leading-[2]">形容詞は解釈の余地が大きすぎるんです。「自由」は人によって全く違う行動を意味する。「有給を自由に取れる自由」と「勤務時間を自由に決められる自由」は違う。動詞にすると、何をすべきかが明確になる。</p>
+      </div>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">三浦 直人（CEO）</div>
+        <p class="text-ink-soft leading-[2]">実際に動詞化してみたら、確かに違いました。「自分で決める」と書くと、新入社員が「上司に相談する前に決めていいんだ」と気づく。「他者の判断を尊重する」と書くと、決定への口出しが減る。行動が変わったんです。</p>
+      </div>
+      
+      
+      <h2>設計できるカルチャーと、できないカルチャー</h2>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">編集部</div>
+        <p class="text-ink-soft leading-[2]">そもそも、カルチャーは設計できるものなのでしょうか？</p>
+      </div>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">三浦 直人（CEO）</div>
+        <p class="text-ink-soft leading-[2]">半分は設計できるが、半分は設計できない、が僕の答えです。動詞化みたいな明示的な部分は設計できる。でも、社員一人ひとりが日常的に発する「空気」は設計できない。</p>
+      </div>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">佐藤 美和（CHRO）</div>
+        <p class="text-ink-soft leading-[2]">設計できるのは「骨組み」までです。骨組みに肉付けするのは、社員の日常。CHROの仕事は、骨組みを提示することと、肉付けを促す環境を作ることの2つです。</p>
+      </div>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">三浦 直人（CEO）</div>
+        <p class="text-ink-soft leading-[2]">経営としてよくやりがちなミスは、カルチャーを全部設計しようとすることです。細かい行動規範まで書き出す。それをやると、カルチャーが硬直化して、逆に機能しなくなる。</p>
+      </div>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">佐藤 美和（CHRO）</div>
+        <p class="text-ink-soft leading-[2]">設計と即興のバランスです。骨組みは設計、肉付けは即興。両方あって、初めてカルチャーは生きる。</p>
+      </div>
+      
+      
+      <h2>経営とCHROの、役割分担</h2>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">編集部</div>
+        <p class="text-ink-soft leading-[2]">カルチャー設計における、経営とCHROの役割分担は？</p>
+      </div>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">三浦 直人（CEO）</div>
+        <p class="text-ink-soft leading-[2]">私の役割は、カルチャーの「方向」を示すこと。「私たちはこういう会社でありたい」というビジョンを描く。抽象的でも構わない。</p>
+      </div>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">佐藤 美和（CHRO）</div>
+        <p class="text-ink-soft leading-[2]">CHROの役割は、その抽象を「動詞と制度」に翻訳することです。「こういう会社でありたい」を、「どんな行動を取ることか」「どんな仕組みで支えるか」に落とし込む。</p>
+      </div>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">三浦 直人（CEO）</div>
+        <p class="text-ink-soft leading-[2]">この役割分担が明確になってから、経営会議でカルチャー議論の質が変わりました。私が抽象を語り、佐藤さんが具体化する。両方があって、意思決定が早くなる。</p>
+      </div>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">佐藤 美和（CHRO）</div>
+        <p class="text-ink-soft leading-[2]">逆パターンだと機能しません。CEOが具体を語り、CHROが抽象論を話すと、両者がぶつかる。抽象と具体の使い分けが、カルチャー設計の第一歩です。</p>
+      </div>
+      
+      
+      <h2>カルチャーは、更新し続けるもの</h2>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">編集部</div>
+        <p class="text-ink-soft leading-[2]">設計したカルチャーは、そのまま固定するのですか？</p>
+      </div>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">佐藤 美和（CHRO）</div>
+        <p class="text-ink-soft leading-[2]">いいえ。カルチャーは、組織のフェーズに合わせて更新し続けるものです。100人と300人では、機能するカルチャーが違います。</p>
+      </div>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">三浦 直人（CEO）</div>
+        <p class="text-ink-soft leading-[2]">私たちは半年に1回、カルチャー動詞の見直し会議を開いています。動詞を追加することもあれば、書き換えることもある。バージョン管理する感覚です。</p>
+      </div>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">佐藤 美和（CHRO）</div>
+        <p class="text-ink-soft leading-[2]">カルチャーを「一度作って据え置き」にすると、必ず組織成長のどこかで機能不全を起こします。ソフトウェアと同じで、リリース後の運用こそが本番です。</p>
+      </div>
+      
+      <div class="dialogue-turn mb-6">
+        <div class="dialogue-speaker text-[11px] tracking-[0.24em] uppercase text-accent mb-2">三浦 直人（CEO）</div>
+        <p class="text-ink-soft leading-[2]">「カルチャーは設計できるか」への私たちの答えは、「設計と更新の連続で、限定的に設計できる」です。永続的なカルチャーは存在しない。組織と共に進化するものです。</p>
+      </div>
+      
+      
+
+      
+      <blockquote class="pull-quote my-12">
+        カルチャーは設計と更新の連続で、限定的に設計できる。永続的なカルチャーは存在しない。
+      </blockquote>
+      
+    </div>
+
+    
+    <div class="editor-note mt-20">
+      <div class="font-en-sans text-[10px] tracking-[0.3em] text-accent mb-3">EDITOR'S NOTE</div>
+      <p class="font-serif-jp text-[15px] leading-[2] text-ink">三浦さん・佐藤さんの対話が示したのは、カルチャー設計における経営とCHROの明確な役割分担だった。抽象と具体、方向と実装。この2つの言語を持つ人が組織のトップに揃った時、カルチャーは初めて「設計対象」になる。</p>
+    </div>
+    
+
+    <div class="mt-16 flex items-center justify-between flex-wrap gap-4 border-t border-line pt-8">
+      <div class="font-en-sans text-[10px] tracking-[0.3em] text-ink-mute">SHARE THIS DIALOGUE</div>
+      <div class="flex gap-4">
+        <a href="https://twitter.com/intent/tweet?url=https://hitomichi-interview.vercel.app/dialogue-02.html&text=%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%81%AF%E3%80%81%E8%A8%AD%E8%A8%88%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%8B%E3%80%82" target="_blank" class="w-10 h-10 border border-line flex items-center justify-center hover:border-accent hover:text-accent transition" aria-label="X">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://hitomichi-interview.vercel.app/dialogue-02.html" target="_blank" class="w-10 h-10 border border-line flex items-center justify-center hover:border-accent hover:text-accent transition" aria-label="Facebook">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.99 22 12"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://hitomichi-interview.vercel.app/dialogue-02.html" target="_blank" class="w-10 h-10 border border-line flex items-center justify-center hover:border-accent hover:text-accent transition" aria-label="LinkedIn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.339 18.337v-8.59H5.667v8.59zM7.003 8.575a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1m11.335 9.762v-4.717c0-2.598-1.404-3.806-3.275-3.806-1.51 0-2.187.83-2.564 1.412v-1.213h-2.844c.037.804 0 8.59 0 8.59h2.844v-4.797c0-.256.018-.512.094-.694.205-.51.674-1.04 1.461-1.04 1.03 0 1.442.785 1.442 1.937v4.594z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- ============ RELATED ============ -->
+<section class="py-20 lg:py-24 bg-paper-soft">
+  <div class="max-w-container mx-auto px-6 lg:px-10">
+    <div class="mb-12">
+      <div class="section-eyebrow mb-4">Related</div>
+      <h2 class="section-title text-[26px] lg:text-[32px]">こちらの記事もどうぞ。</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+      
+      <a href="interview-03.html" class="card block">
+        <div class="thumb aspect-[5/4] mb-6">
+          <img src="assets/photos/interview-02.jpg" style="filter: grayscale(0.3);" alt="" />
+        </div>
+        <div class="flex items-center gap-2 flex-wrap mb-3">
+          
+          <span class="meta-tag theme">カルチャー</span>
+          
+          <span class="meta-tag">IT・通信</span>
+        </div>
+        <h3 class="card-title text-[18px] mb-2 leading-[1.55]">100名突破時に直面した、カルチャー再定義。</h3>
+        <p class="text-ink-mute text-[12px] tracking-[0.08em]">林田 真由美 ｜ Studio Hatcher 人事責任者</p>
+      </a>
+      
+      <a href="dialogue-01.html" class="card block">
+        <div class="thumb aspect-[5/4] mb-6">
+          <img src="assets/photos/dialogue-01.jpg" style="filter: grayscale(0.3);" alt="" />
+        </div>
+        <div class="flex items-center gap-2 flex-wrap mb-3">
+          
+          <span class="meta-tag theme">リスキリング</span>
+          
+          <span class="meta-tag">IT・通信</span>
+        </div>
+        <h3 class="card-title text-[18px] mb-2 leading-[1.55]">リスキリングは、"権利"だ。</h3>
+        <p class="text-ink-mute text-[12px] tracking-[0.08em]">木村 拓海 × 藤本 涼</p>
+      </a>
+      
+      <a href="interview-01.html" class="card block">
+        <div class="thumb aspect-[5/4] mb-6">
+          <img src="assets/photos/pickup-01.jpg" style="filter: grayscale(0.3);" alt="" />
+        </div>
+        <div class="flex items-center gap-2 flex-wrap mb-3">
+          
+          <span class="meta-tag theme">組織開発</span>
+          
+          <span class="meta-tag">金融・保険</span>
+        </div>
+        <h3 class="card-title text-[18px] mb-2 leading-[1.55]">経営と現場を往復する、人事の翻訳力。</h3>
+        <p class="text-ink-mute text-[12px] tracking-[0.08em]">田中 良子 ｜ オリエンス・ホールディングス CHRO</p>
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+<footer class="footer pt-16 pb-10">
+  <div class="max-w-container mx-auto px-6 lg:px-10">
+    <div class="grid md:grid-cols-4 gap-10 mb-14">
+      <div class="md:col-span-1">
+        <div class="mb-5"><img src="assets/logo-horizontal-white.png" srcset="assets/logo-horizontal-white.png 1x, assets/logo-horizontal-white@2x.png 2x" alt="HITOMICHI 人道" class="h-10 w-auto" /></div>
+        <p class="text-[12px] leading-[2] text-white/70">人を、企業の資本に。<br/>HR実践者のためのインタビューメディア。</p>
+      </div>
+      <div>
+        <div class="font-en-sans text-[10px] text-white/60 mb-4">Read</div>
+        <ul class="space-y-3 text-[13px]"><li><a href="index.html#latest">新着記事</a></li><li><a href="index.html#special">特別対談</a></li><li><a href="index.html#interview">インタビュー</a></li><li><a href="columns.html">コラム</a></li><li><a href="index.html#tags">タグ一覧</a></li></ul>
+      </div>
+      <div>
+        <div class="font-en-sans text-[10px] text-white/60 mb-4">Service</div>
+        <ul class="space-y-3 text-[13px]"><li><a href="#">HITOMICHI Conference</a></li><li><a href="#">HITOMICHI Awards</a></li><li><a href="#">HR Practitioners' Salon</a></li><li><a href="#">Newsletter</a></li></ul>
+      </div>
+      <div>
+        <div class="font-en-sans text-[10px] text-white/60 mb-4">About</div>
+        <ul class="space-y-3 text-[13px]"><li><a href="https://kaimaku.jp/" target="_blank" rel="noopener">運営会社</a></li><li><a href="about.html">編集方針</a></li><li><a href="#">広告掲載</a></li><li><a href="#">取材依頼</a></li><li><a href="#">プライバシーポリシー</a></li></ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 flex flex-wrap justify-between items-center gap-4 text-[11px] text-white/50">
+      <div>© 2026 HITOMICHI Editorial. All rights reserved.</div>
+      <div class="flex gap-5"><a href="#">X</a><a href="#">Facebook</a><a href="#">LinkedIn</a><a href="#">note</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

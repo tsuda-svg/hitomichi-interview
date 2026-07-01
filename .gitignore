@@ -5,3 +5,5 @@ node_modules/
 
 # Local A/B preview files (not for production)
 _preview-*.html
+__pycache__/
+_test_*.html
